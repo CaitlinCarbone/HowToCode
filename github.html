@@ -10,51 +10,44 @@
 <body>
     <!-- GitHub Page -->
     <div class="github-page" id="github">
-        <header class="topnav">
-            <img src="images/1091328.png" alt="Logo">
-            <ul class="nav_links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./interactive.html">Interactive</a></li>
-                <li><a href="./help.html">Help</a></li>
-              </ul>
+        <div class="topnav">
+            <img src="images/1091328.png" id="nav-img" alt="Logo" width="40" height="40">
+            <nav>
+                <a href="./index.html" id="nav-link">Home</a>
+                <a href="./about.html" id="nav-link">About</a>
+                <a href="./interactive.html" id="nav-link">Interactive</a>
+                <a href="./help.html" id="nav-link">Help</a>
+            </nav>
             <hr>
-    </header>
+        </div>
 
         <h1>Welcome to a basic github tutorial</h1>
     <div>
         <h2>Download Links</h2>
         <a href="https://git-scm.com/downloads">Download Git</a>
     </div>
-        <div>
+        <div class="sections">
         <h2>The Basics</h2>
 
         <h3>Steps</h3>
-        <ol>
+        <ol class="instructions">
             <li>Make sure you make a branch first to protect the current GitHub content.</li>
-            <li>
-                <!-- <p>git pull origin &lt;branch name&gt;</p>
-                <p>git checkout &lt;branch name&gt;</p> -->
-                <p>git checkout -b branch</p>
+            <li>git checkout -b branch
                 <div class="github-images">
                 <img src="images/branch.png" alt="Logo">
                 </div>
             </li>
-            <li>
-                <p>git status</p>
+            <li>git status
             </li>
-            <li>
-                <p>git add [filename.extension]</p>
+            <li>git add [filename.extension]
                 
                 <div class="github-images">
                     <img src="images/git_status_add.png" alt="Logo">
                 </div>
             </li>
+            <li>git commit -m "Add message"</li>
             <li>
-                <p>git commit -m "Add message"</p>
-            </li>
-            <li>
-                <p>git push origin [branch name]</p>
+                git push origin [branch name]
                 <div class="github-images">
                 <img src="images/git_commit_push.png" alt="Logo">
                 </div>
@@ -64,7 +57,7 @@
             </li>
         </ol>  
     </div>
-        <div>  
+        <div class="sections">  
         <h3>Helping Commands</h3>
         <ul>
             <li>git status is your best friend! You can check which files Git is tracking by running git status</li>
