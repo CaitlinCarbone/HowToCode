@@ -1,12 +1,67 @@
-.github-images{
+/* Site Wide */
+body {
+    background-color: ivory;
+}
+
+
+/* Navbar */
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.topnav{
+    font-weight: 500px;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+.topnav li {
+    display: inline-block;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #003a00;
+    color: white;
+}
+
+/* Style for the logo */
+.topnav img {
+    float: left;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Style for the horizontal rule */
+.topnav hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #34495e;
+    /* Slightly darker line color for the horizontal rule */
+}
+
+
+
+.github-images {
     width: "750";
-    height:"auto"
+    height: "auto"
 
 }
 
 .support_footer {
     text-align: left;
     padding: 3px;
-    background-color: DarkSalmon;
+    background-color: #003a00;
     color: white;
-  }
+}
