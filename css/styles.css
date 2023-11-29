@@ -1,57 +1,67 @@
 /* Site Wide */
-body {
-    background-color: ivory;
-}
-
 
 /* Navbar */
-.topnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.topnav{
-    font-weight: 500px;
-    font-size: 16px;
-    text-decoration: none;
-    
-}
-.topnav li {
-    display: inline-block;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
+body {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.87), gray); */
+    background-color:ivory;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  }
+
+p {
+  text-align: center;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-    background-color: #003a00;
-    color: white;
+#nav-img, #nav-link {
+    padding: 0.25rem;
 }
 
-/* Style for the logo */
-.topnav img {
-    float: left;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
+h1 {
+    font-family: 'Century Gothic';
+    text-align: center;
+    color:darkgreen;
 }
 
-/* Style for the horizontal rule */
-.topnav hr {
-    margin: 0;
-    border: none;
-    border-top: 1px solid #34495e;
-    /* Slightly darker line color for the horizontal rule */
+h2 {
+  font-family: 'Century Gothic';
+  text-align: center;
+  color:darkgreen;
 }
 
 
+
+h4 {
+  text-align: center;
+  color: green;
+  font-family: 'Century Gothic';
+}
+
+h3 {
+  text-align: center;
+  color: green;
+  font-family: 'Century Gothic';
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+a:hover {
+  background-color: yellowgreen;
+  color: #19558d;
+}
+strong {
+  color: darkgreen;
+  font-family: 'Century Gothic';
+}
+
+.instructions{
+    text-align: center;
+    list-style-position: inside;
+}
+
+.instructions li{
+    margin-bottom: 20px;
+}
 
 .github-images {
     width: "750";
