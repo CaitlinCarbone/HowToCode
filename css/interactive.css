@@ -7,6 +7,9 @@ body {
 p {
   text-align: center;
 }
+#nav-img, #nav-link {
+  padding: 0.25rem;
+}
 
 h2 {
   font-family: 'Century Gothic';
