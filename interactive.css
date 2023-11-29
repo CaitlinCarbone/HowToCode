@@ -1,0 +1,44 @@
+body {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.87), gray); */
+    background-color:ivory;
+    text-align: center;
+  }
+
+p {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Century Gothic';
+  text-align: center;
+  color:darkgreen;
+}
+figure {
+  color:darkgreen;
+  text-align:center;
+}
+
+h4 {
+  text-align: center;
+  color: green;
+  font-family: 'Century Gothic';
+}
+
+h3 {
+  text-align: center;
+  color: green;
+  font-family: 'Century Gothic';
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+a:hover {
+  background-color: yellowgreen;
+  color: #19558d;
+}
+strong {
+  color: darkgreen;
+  font-family: 'Century Gothic';
+}
