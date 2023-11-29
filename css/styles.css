@@ -61,11 +61,16 @@ strong {
 
 .instructions li{
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .github-images {
     width: "750";
     height: "auto"
+
+}
+.support_head{
+  color: white;
 
 }
 
@@ -74,4 +79,7 @@ strong {
     padding: 3px;
     background-color: #003a00;
     color: white;
+}
+.support_footer a {
+  color: white;
 }
