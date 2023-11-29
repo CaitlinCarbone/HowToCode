@@ -27,8 +27,6 @@ h2 {
   color:darkgreen;
 }
 
-
-
 h4 {
   text-align: center;
   color: green;
@@ -63,6 +61,33 @@ strong {
     margin-bottom: 20px;
     font-size: 18px;
 }
+
+.bottom_index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.bottom_index div {
+  color: #008000;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-decoration: none;
+  margin-right:25%;
+}
+
+.bottom_index a {
+  color: #008000;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-decoration: none;
+  margin-right:25%;
+}
+
+.bottom_index img {
+  height: 150px; 
+}
+
 
 .github-images {
     width: "750";
