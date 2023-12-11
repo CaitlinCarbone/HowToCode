@@ -2,7 +2,6 @@
 
 /* Navbar */
 body {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.87), gray); */
     background-color:ivory;
     text-align: center;
   }
@@ -26,8 +25,6 @@ h2 {
   text-align: center;
   color:darkgreen;
 }
-
-
 
 h4 {
   text-align: center;
@@ -61,11 +58,43 @@ strong {
 
 .instructions li{
     margin-bottom: 20px;
+    font-size: 18px;
 }
+
+.bottom_index {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.bottom_index div {
+  color: #008000;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-decoration: none;
+  margin-right:25%;
+}
+
+.bottom_index a {
+  color: #008000;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-decoration: none;
+  margin-right:25%;
+}
+
+.bottom_index img {
+  height: 150px; 
+}
+
 
 .github-images {
     width: "750";
     height: "auto"
+
+}
+.support_head{
+  color: white;
 
 }
 
@@ -74,4 +103,36 @@ strong {
     padding: 3px;
     background-color: #003a00;
     color: white;
+}
+.support_footer a {
+  color: white;
+}
+
+
+/* Help */
+.table{
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+.company-table {
+  width: auto;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.company-table th, .company-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.company-table th {
+  background-color: #f2f2f2;
+}
+.company-logo{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
