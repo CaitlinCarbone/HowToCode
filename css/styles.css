@@ -2,40 +2,85 @@
 
 /* Navbar */
 body {
-    background-color:ivory;
-    text-align: center;
-  }
+  background-color: ivory;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
 p {
   text-align: center;
 }
+.topnav {
+  background-color: darkgreen;
+  height: fit-content;
+  display: flex;
+}
 
-#nav-img, #nav-link {
-    padding: 0.25rem;
+li {
+  display: inline;
+  height: 50px;
+  padding-left: 70px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.nav-links {
+  padding-right: 80px;
+  padding-top: 2px;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  color: white;
+  font-family: "Century Gothic";
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.nav-img {
+  display: inline;
+  margin: auto 15px;
+  display: block;
+}
+
+#nav-img {
+  text-align: left;
+}
+
+.index-background {
+  background: #000000;
+  margin: 0px !important;
+  overflow: hidden;
+  height: 400px;
 }
 
 h1 {
-    font-family: 'Century Gothic';
-    text-align: center;
-    color:darkgreen;
+  font-family: "Century Gothic";
+  text-align: center;
+  color: darkgreen;
 }
 
 h2 {
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
   text-align: center;
-  color:darkgreen;
+  color: darkgreen;
 }
 
 h4 {
   text-align: center;
   color: green;
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
 }
 
 h3 {
   text-align: center;
   color: green;
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
 }
 ul {
   list-style-type: none;
@@ -43,74 +88,109 @@ ul {
   padding: 0;
 }
 a:hover {
-  background-color: yellowgreen;
-  color: #19558d;
+  background-color: darkgreen;
+  text-decoration: none;
+  color: white;
 }
 strong {
   color: darkgreen;
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
 }
 
-.instructions{
-    text-align: center;
-    list-style-position: inside;
+.instructions {
+  text-align: center;
+  list-style-position: inside;
 }
 
-.instructions li{
-    margin-bottom: 20px;
-    font-size: 18px;
+.instructions li {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .bottom_index {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px;
+  padding-bottom: 15px;
+  gap: 50px;
+  margin: 0 auto;
+  width: fit-content;
+  font-family: "Century Gothic";
+  border-bottom: darkgreen solid 3px;
 }
 .bottom_index div {
   color: #008000;
-  font-size: 20px; 
-  font-weight: bold; 
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
-  margin-right:25%;
 }
 
 .bottom_index a {
   color: #008000;
-  font-size: 20px; 
-  font-weight: bold; 
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
-  margin-right:25%;
 }
 
 .bottom_index img {
-  height: 150px; 
+  height: 150px;
 }
 
+.github-facts-button {
+  background-color: darkgreen;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: auto;
+  display: block;
+}
+
+.bottom-index-button-styling {
+  color: white !important;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* .facts-tab{
+margin-left: auto;
+float: left;
+}
+
+.github-tab{
+float: right;
+margin-right: auto;
+}
+
+.small-coding-img{
+text-align: center;
+display: inline-block;
+margin: 0 30px;
+} */
 
 .github-images {
-    width: "750";
-    height: "auto"
-
+  width: "750";
+  height: "auto";
 }
-.support_head{
+.support_head {
   color: white;
-
 }
 
 .support_footer {
-    text-align: left;
-    padding: 3px;
-    background-color: #003a00;
-    color: white;
+  text-align: left;
+  padding: 3px;
+  background-color: #003a00;
+  color: white;
 }
 .support_footer a {
   color: white;
 }
 
-
 /* Help */
-.table{
+.table {
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
@@ -122,7 +202,8 @@ strong {
   text-align: center;
 }
 
-.company-table th, .company-table td {
+.company-table th,
+.company-table td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: center;
@@ -131,8 +212,14 @@ strong {
 .company-table th {
   background-color: #f2f2f2;
 }
-.company-logo{
+.company-logo {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+hr {
+  width: 40%;
+  border-bottom: 3px solid darkgreen;
+}
+
