@@ -1,2 +1,2 @@
 # HowToCode
-146 final project to create a html/css website on teaching people how to code.
+Our CS 146 final project to create a website using HTML, CSS and JavaScript to teach people how to code.
