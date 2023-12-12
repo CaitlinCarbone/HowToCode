@@ -124,11 +124,11 @@ figcaption {
 label,
 input,
 button {
-  margin: 5px;
+  margin: 10px;
 }
 
 input {
-  flex-grow: 1; 
+  width: 150px; 
 }
 
 button {
