@@ -39,7 +39,7 @@
 
 </div>
 
-<script>
+    <script>
     var correctAnswers = [
         "def add(x, y):", 
         "def first(l):",
@@ -62,6 +62,8 @@
         } else {
             resultElement.innerHTML = "Incorrect. Try again!";
         }
+
+        // Clear the input field after checking the answer
         document.getElementById(userInputId).value = "";
     }
 </script>
