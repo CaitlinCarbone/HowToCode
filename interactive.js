@@ -1,4 +1,3 @@
-
 <div>
     <h3>Can you find the bug? </h3>
     <p>Here are a couple functions each with a single syntax error preventing them from working as intended. Try to find the line that contains the error! in this <a href="./quiz.html">short quiz</a>.</p>
