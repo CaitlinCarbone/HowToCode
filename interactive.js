@@ -39,7 +39,7 @@
 
 </div>
 
-    <script>
+   <script>
     var correctAnswers = [
         "def add(x, y):", 
         "def first(l):",
@@ -49,10 +49,15 @@
     ];
 
     function checkAnswer(questionNumber) {
+        console.log("checkAnswer function called for question " + questionNumber);
+
         var userInputId = "userAnswer" + questionNumber;
         var userAnswer = document.getElementById(userInputId).value.trim().toLowerCase();
 
         var correctAnswer = correctAnswers[questionNumber - 1];
+
+        console.log("User Answer: " + userAnswer);
+        console.log("Correct Answer: " + correctAnswer);
 
         var resultId = "result" + questionNumber;
         var resultElement = document.getElementById(resultId);
@@ -62,8 +67,6 @@
         } else {
             resultElement.innerHTML = "Incorrect. Try again!";
         }
-
-        // Clear the input field after checking the answer
         document.getElementById(userInputId).value = "";
     }
 </script>
