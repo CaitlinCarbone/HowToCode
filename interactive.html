@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Coding Examples</title>
     <link rel="icon" type="image/x-icon" href="images/1091328.png">
     <link rel="stylesheet" href="css/interactive.css">
+    <script>
+        var correctAnswers = [
+            "def add(x, y):",
+            "def first(l):",
+            "<div></div>",
+            "int multiply(int x, int y) { return x * y; }",
+            'cout << "Hello World!";',
+        ];
 
+        function checkAnswer(questionNumber) {
+            console.log("checkAnswer function called for question " + questionNumber);
+
+            var userInputId = "userAnswer" + questionNumber;
+            var userAnswer = document.getElementById(userInputId).value.trim().toLowerCase();
+
+            var correctAnswer = correctAnswers[questionNumber - 1];
+
+            console.log("User Answer: " + userAnswer);
+            console.log("Correct Answer: " + correctAnswer);
+
+            var resultId = "result" + questionNumber;
+            var resultElement = document.getElementById(resultId);
+
+            var inputElement = document.getElementById(userInputId);
+
+            if (userAnswer === correctAnswer) {
+                inputElement.style.backgroundColor = "green";
+                resultElement.innerHTML = "Correct!";
+            } else {
+                inputElement.style.backgroundColor = "red";
+                resultElement.innerHTML = "Incorrect. Try again!";
+                fadeOut(inputElement);
+            }
+        }
+
+        function fadeOut(element) {
+            var opacity = 1;
+            var interval = setInterval(function () {
+                if (opacity <= 0.1) {
+                    clearInterval(interval);
+                    element.style.display = "none";
+                    element.style.backgroundColor = ""; // Reset background color
+                } else {
+                    element.style.opacity = opacity;
+                    opacity -= 0.1;
+                }
+            }, 100);
+        }
+    </script>
 </head>
+
 <body>
     <!-- Interactive Page -->
     <div class="interactive-page" id="interactive" width="40" height="40">
@@ -27,7 +77,7 @@
                     <li>
                         <a href="./help.html" id="nav-link">Help</a>
                     </li>
-                </ul>  
+                </ul>
             </nav>
         </div>
         <div>
@@ -54,7 +104,7 @@
                 <figure>
                     <figcaption><strong> Question 2 (Python)</strong></figcaption>
                     <img src="images/Question2img.png" alt="Question 2 Image" width="400">
-                     <div class="answer-section">
+                    <div class="answer-section">
                         <label for="userAnswer2">Enter your answer: </label>
                         <input type="text" id="userAnswer2" placeholder="Type your answer">
                         <button type="submit" onclick="checkAnswer(2)">Submit</button>
@@ -66,7 +116,7 @@
                 <figure>
                     <figcaption><strong> Question 3 (HTML)</strong></figcaption>
                     <img src="images/Question3img.png" alt="Question 3 Image" width="400">
-                   <div class="answer-section">
+                    <div class="answer-section">
                         <label for="userAnswer3">Enter your answer: </label>
                         <input type="text" id="userAnswer3" placeholder="Type your answer">
                         <button type="submit" onclick="checkAnswer(3)">Submit</button>
@@ -78,7 +128,7 @@
                 <figure>
                     <figcaption><strong> Question 4 (C)</strong></figcaption>
                     <img src="images/Question4img.png" alt="Question 3 Image" width="400">
-                     <div class="answer-section">
+                    <div class="answer-section">
                         <label for="userAnswer4">Enter your answer: </label>
                         <input type="text" id="userAnswer4" placeholder="Type your answer">
                         <button type="submit" onclick="checkAnswer(4)">Submit</button>
@@ -90,7 +140,7 @@
                 <figure>
                     <figcaption><strong> Question 5 (C++)</strong></figcaption>
                     <img src="images/Question5img.png" alt="Question 3 Image" width="400">
-                  <div class="answer-section">
+                    <div class="answer-section">
                         <label for="userAnswer5">Enter your answer: </label>
                         <input type="text" id="userAnswer5" placeholder="Type your answer">
                         <button type="submit" onclick="checkAnswer(5)">Submit</button>
@@ -101,13 +151,15 @@
             </p>
         </div>
         <br>
-    <br>
-    <div class="support_footer">
-        <footer>
-            <h2 class="support_head">Support</h2>
-            <p>If you have any questions or concerns please contact the support team or visit <a href="./help.html" class="support_link">Help</a></p>
-        </footer>
-    </div>
+        <br>
+        <div class="support_footer">
+            <footer>
+                <h2 class="support_head">Support</h2>
+                <p>If you have any questions or concerns please contact the support team or visit <a href="./help.html" class="support_link">Help</a></p>
+            </footer>
+        </div>
     </div>
 </body>
+
 </html>
+``
