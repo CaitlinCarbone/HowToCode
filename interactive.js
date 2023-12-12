@@ -44,7 +44,7 @@
     "def first(l):",
     "<div></div>", 
     "int multiply(int x, int y) { return x * y; }",
-    'cout << "Hello World!";',
+    "cout << "Hello World!";",
 ];
 
 function checkAnswer(questionNumber) {
