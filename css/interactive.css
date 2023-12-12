@@ -106,7 +106,6 @@ strong {
   color: white;
 }
 
-/* Custom styling for questions */
 figure {
   position: relative;
 }
@@ -115,13 +114,24 @@ figcaption {
   margin-top: 10px;
 }
 
+.answer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 label,
 input,
 button {
-  display: block;
-  margin: 10px auto;
+  margin: 10px;
+}
+
+input {
+  flex-grow: 1; 
 }
 
 button {
   cursor: pointer;
 }
+
