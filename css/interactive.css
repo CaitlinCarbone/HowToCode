@@ -9,6 +9,7 @@ body {
 p {
   text-align: center;
 }
+
 .topnav {
   background-color: darkgreen;
   height: fit-content;
@@ -55,9 +56,10 @@ h2 {
   text-align: center;
   color:darkgreen;
 }
+
 figure {
-  color:darkgreen;
-  text-align:center;
+  color: darkgreen;
+  text-align: center;
 }
 
 h4 {
@@ -71,15 +73,18 @@ h3 {
   color: green;
   font-family: 'Century Gothic';
 }
+
 ul {
   list-style-type: none;
   text-align: center;
   padding: 0;
 }
+
 a:hover {
   background-color: yellowgreen;
   color: #19558d;
 }
+
 strong {
   color: darkgreen;
   font-family: 'Century Gothic';
@@ -96,6 +101,27 @@ strong {
   color: white;
   bottom: 0;
 }
+
 .support_footer a {
   color: white;
+}
+
+/* Custom styling for questions */
+figure {
+  position: relative;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  cursor: pointer;
 }
