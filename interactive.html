@@ -47,7 +47,7 @@
             var interval = setInterval(function () {
                 if (opacity <= 0.1) {
                     clearInterval(interval);
-                    element.style.display = "none";
+                    element.style.opacity = 1; // Reset opacity
                     element.style.backgroundColor = ""; // Reset background color
                 } else {
                     element.style.opacity = opacity;
@@ -162,4 +162,3 @@
 </body>
 
 </html>
-``
