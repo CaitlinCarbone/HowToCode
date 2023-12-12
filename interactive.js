@@ -40,7 +40,7 @@
 </div>
 
  var correctAnswers = [
-    "def add(x, y):", 
+    "def add(x, y)", 
     "def first(l):",
     "<div></div>", 
     "int multiply(int x, int y) { return x * y; }",
