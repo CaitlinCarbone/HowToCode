@@ -43,14 +43,14 @@
     var correctAnswers = [
         "def add(x, y):", 
         "def first(l):",
-        "<div> ... </div>", 
+        "<div></div>", 
         "int multiply(int x, int y) { return x * y; }",
         'cout << "Hello World!";',
     ];
 
     function checkAnswer(questionNumber) {
         var userInputId = "userAnswer" + questionNumber;
-        var userAnswer = document.getElementById(userInputId).value.toLowerCase();
+        var userAnswer = document.getElementById(userInputId).value.trim().toLowerCase();
 
         var correctAnswer = correctAnswers[questionNumber - 1];
 
