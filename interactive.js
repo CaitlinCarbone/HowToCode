@@ -62,5 +62,6 @@
         } else {
             resultElement.innerHTML = "Incorrect. Try again!";
         }
+        document.getElementById(userInputId).value = "";
     }
 </script>
