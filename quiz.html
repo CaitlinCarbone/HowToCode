@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Coding Examples</title>
+    <link rel="icon" type="image/x-icon" href="images/1091328.png">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/quiz.js"></script>
+
+</head>
+<body>
+    <!-- Interactive Page -->
+    <div class="interactive-page" id="interactive" width="40" height="40">
+        <div class="topnav">
+            <img src="images/1091328.png" class="nav-img" id="nav-img" alt="Logo" width="40" height="40">
+            <nav class="nav-links">
+                <ul>
+                    <li>
+                        <a href="./index.html" id="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" id="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="./interactive.html" id="nav-link">Interactive</a>
+                    </li>
+                    <li>
+                        <a href="./help.html" id="nav-link">Help</a>
+                    </li>
+                </ul>  
+            </nav>
+        </div>
+            
+            <hr>
+            <div>
+                <h2>Quiz time!</h2>
+                <a>Get ready for a short 5 question quiz that will test your knowledge. Can you get them all right? Only one way to find out...</a>
+                <br>
+                <hr>
+                <div id="postQuizDiv">
+                    <h4 id="scoreText"></h4>
+                </div>
+                <div id="quizBody">
+                    <h3>Which HTML element acts as a container for any metadata (information for the browser unseen by regular users)?</h3>
+                    <input type="radio" name="q1" id="a1q1">
+                    <label>head</label> <!--correct answer-->
+                    <input type="radio" name="q1" id="a2q1">
+                    <label>body</label>
+                    <input type="radio" name="q1" id="a3q1">
+                    <label>div</label>
+                    <input type="radio" name="q1" id="a4q1">
+                    <label>a</label>
+
+                    <h3>Which language does not contain pointers?</h3>
+                    <input type="radio" name="q2" id="a1q2">
+                    <label>C</label> 
+                    <input type="radio" name="q2" id="a2q2">
+                    <label>Python</label> <!--correct answer-->
+                    <input type="radio" name="q2" id="a3q2">
+                    <label>C++</label>
+                    <input type="radio" name="q2" id="a4q2">
+                    <label>Rust</label>
+
+                    <h3>What is the difference between object-oriented and functional languages?</h3>
+                    <input type="radio" name="q3" id="a1q3">
+                    <label>Object-oriented programming does not have functions. Functional programming does.</label> 
+                    <br><input type="radio" name="q3" id="a2q3">
+                    <label>Object-oriented programming deals with data. Functional programming does not.</label>
+                    <br><input type="radio" name="q3" id="a3q3">
+                    <label>Object-oriented programming exists. Functional programming is not real.</label>
+                    <br><input type="radio" name="q3" id="a4q3"> <!--correct answer-->
+                    <label>Object-oriented programming deals with classes and objects. Functional programming uses functions to transform data.</label> <!--Correct answer-->
+                
+                    <h3>Is C functional or object-oriented?</h3>
+                    <input type="radio" name="q4" id="a1q4">
+                    <label>Neither, it is procedural</label>  <!--correct answer-->
+                    <input type="radio" name="q4" id="a2q4">
+                    <label>Functional</label>
+                    <input type="radio" name="q4" id="a3q4">
+                    <label>Object-Oriented</label>
+                    <input type="radio" name="q4" id="a4q4">
+                    <label>Both</label>
+
+                    <h3>Is Python functional or object-oriented?</h3>
+                    <input type="radio" name="q5" id="a1q5">
+                    <label>Neither, it is procedural</label>  
+                    <input type="radio" name="q5" id="a2q5">
+                    <label>Functional</label>
+                    <input type="radio" name="q5" id="a3q5">
+                    <label>Object-Oriented</label> <!--correct answer-->
+                    <input type="radio" name="q5" id="a4q5">
+                    <label>Both</label>
+
+                    <br><hr>
+                    <input type="button" id="submit" value="Get Results" onclick="getResults()">
+                    <br><br>
+                    <a href="interactive.html" class="nav-link">Back to Interactive</a>
+                </div>
+            </div>
+        
+    </div>
+</body>

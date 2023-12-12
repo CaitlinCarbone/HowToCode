@@ -17,12 +17,6 @@ p {
   display: flex;
 }
 
-li {
-  display: inline;
-  height: 50px;
-  padding-left: 70px;
-}
-
 li a {
   text-decoration: none;
 }
@@ -223,3 +217,8 @@ hr {
   border-bottom: 3px solid darkgreen;
 }
 
+.nav-li{
+  display: inline;
+  height: 50px;
+  padding-left: 70px;
+}
