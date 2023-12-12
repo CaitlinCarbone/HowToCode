@@ -17,7 +17,7 @@ function getResults() {
     var resultString = result + "%";
 
     document.getElementById("quizBody").style.visibility = "hidden";
-    var scoreText = document.getElementById("scoreText");
+    var scoreText = document.createElement("h4");
 
     if(countCorr == 5) {
         scoreText.textContent = "Congrats! You scored a " + resultString + "! Great work.";
@@ -28,23 +28,21 @@ function getResults() {
     }
 
     var postQuizDiv = document.getElementById("postQuizDiv");
-    if(document.getElementById("tryAgainButton") == null) {
-        var tryAgain = document.createElement("input");
-        tryAgain.type = "button";
-        tryAgain.value = "Try Again?";
-        tryAgain.id = "tryAgainButton";
-        tryAgain.onclick = tryAgainPressed;
-        postQuizDiv.appendChild(tryAgain);
-    } else {
-        document.getElementById("postQuizDiv").style.visibility = "visible";
-        uncheck();
-    }
+    postQuizDiv.appendChild(scoreText);
+    
+    var tryAgain = document.createElement("input");
+    tryAgain.type = "button";
+    tryAgain.value = "Try Again?";
+    tryAgain.id = "tryAgainButton";
+    tryAgain.onclick = tryAgainPressed;
+    postQuizDiv.appendChild(tryAgain);
+    uncheck();
 }
 
 function tryAgainPressed() {
     uncheck();
     document.getElementById("quizBody").style.visibility = "visible";
-    document.getElementById("postQuizDiv").style.visibility = "hidden";
+    document.getElementById("postQuizDiv").innerHTML = "";
 }
 
 function uncheck() {
