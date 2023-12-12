@@ -5,32 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn To Code</title>
     <link rel="icon" type="image/x-icon" href="images/1091328.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div>
     <!-- Landing Page -->
     <div class="topnav">
-        <img src="images/1091328.png" id="nav-img" alt="Logo" width="40" height="40">
-        <nav>
-            <a href="./index.html" id="nav-link">Home</a>
-            <a href="./about.html" id="nav-link">About</a>
-            <a href="./interactive.html" id="nav-link">Interactive</a>
-            <a href="./help.html" id="nav-link">Help</a>
+        <img src="images/1091328.png" class="nav-img" id="nav-img" alt="Logo" width="40" height="40">
+        <nav class="nav-links">
+            <ul>
+                <li>
+                    <a href="./index.html" id="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" id="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="./interactive.html" id="nav-link">Interactive</a>
+                </li>
+                <li>
+                    <a href="./help.html" id="nav-link">Help</a>
+                </li>
+            </ul>  
         </nav>
     </div>
-    <hr>
-    <div>
-        <h1 class="title">ATEM</h1>
-        <img src="images/background.png" alt="black_code_background" height="400">
-        <p>Learn To Code</p>
     </div>
+    <h1 class="title">ATEM</h1>
+    <div class="index-background">
+        <img src="images/background.png" alt="black_code_background" height="400">
+    </div>
+    <h2>Learn To Code</h2>
     <hr>
-    <div>
-        Learn more about what popular websites code in and more about coding languages!
-        <img src="images/codingimg.webp" alt="small_coding_img" height="150">
-        <a href="./github.html">Github Tutorials</a>
+    <div class="bottom_index">
+        <div  class="facts-tab">
+            Learn what popular websites<br>
+            code in and more about<br>
+            programming languages!
+            <button class="github-facts-button">
+                <a href="./facts.html" class="bottom-index-button-styling">Click Here!</a>
+            </button>
+        </div>
+        <div class="small-coding-img">
+            <img src="images/codingimg.webp" alt="small_coding_img" class="small_coding_img" height="150">
+        </div>
+        
+        
+        <div  class="github-tab">
+            Learn how to use GitHub <br>
+            to collaborate and share<br>repositories with your peers!
+            <button class="github-facts-button">
+                <a href="./github.html" class="bottom-index-button-styling">Click Here!</a>
+            </button>
+        </div>        
     </div> 
+
+    <br>
+    <br>
+    <div class="support_footer">
+        <footer>
+            <h2 class="support_head">Support</h2>
+            <p>If you have any questions or concerns please contact the support team or visit <a href="./help.html" class="support_link">Help</a></p>
+        </footer>
     </div>
 </body>
 </html>
