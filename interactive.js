@@ -1,9 +1,8 @@
-<!-- Add an input field and button for each question -->
+
 <div>
     <h3>Can you find the bug? </h3>
     <p>Here are a couple functions each with a single syntax error preventing them from working as intended. Try to find the line that contains the error! in this <a href="./quiz.html">short quiz</a>.</p>
 
-    <!-- Repeat this block for each question -->
     <div>
         <label for="userAnswer1">Question 1: Enter your answer</label>
         <input type="text" id="userAnswer1" placeholder="Type your answer">
@@ -42,26 +41,21 @@
 </div>
 
 <script>
-    // Define an array of correct answers
     var correctAnswers = [
         "def add(x, y)",
         "def first(l):",
         "<.div> ... <./div>",
         "int multiply(int x, int y) { return x * y; }",
         "cout << "Hello World!";",
-        // Add correct answers for the remaining questions
+
     ];
 
-    // Define a function to check the answer for a specific question
     function checkAnswer(questionNumber) {
-        // Get the user's answer
         var userInputId = "userAnswer" + questionNumber;
         var userAnswer = document.getElementById(userInputId).value.toLowerCase();
 
-        // Get the correct answer for the corresponding question
         var correctAnswer = correctAnswers[questionNumber - 1];
 
-        // Check if the user's answer is correct
         var resultId = "result" + questionNumber;
         if (userAnswer === correctAnswer) {
             document.getElementById(resultId).innerHTML = "Correct!";
