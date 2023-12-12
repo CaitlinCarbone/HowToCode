@@ -41,12 +41,11 @@
 
 <script>
     var correctAnswers = [
-        "def add(x, y)",
+        "def add(x, y):", 
         "def first(l):",
-        "<.div> ... <./div>",
-        "int multiply(int x, int y) { return x * y; }",
-        "cout << "Hello World!";",
-
+        "<div> ... </div>", 
+        "int multiply(int x, int y) { return x * y; }",
+        'cout << "Hello World!";',
     ];
 
     function checkAnswer(questionNumber) {
@@ -56,10 +55,12 @@
         var correctAnswer = correctAnswers[questionNumber - 1];
 
         var resultId = "result" + questionNumber;
+        var resultElement = document.getElementById(resultId);
+
         if (userAnswer === correctAnswer) {
-            document.getElementById(resultId).innerHTML = "Correct!";
+            resultElement.innerHTML = "Correct!";
         } else {
-            document.getElementById(resultId).innerHTML = "Incorrect. Try again!";
+            resultElement.innerHTML = "Incorrect. Try again!";
         }
     }
 </script>
